@@ -2,22 +2,15 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 function MyComponent() {
-  const counter = useSelector(state => state.counter);
+  const prueba = useSelector(state => state.prueba);
   const dispatch = useDispatch();
 
-  const increment = () => {
-    dispatch({ type: 'INCREMENT' });
-  };
 
-  const decrement = () => {
-    dispatch({ type: 'DECREMENT' });
-  };
 
   return (
     <div>
-      <h2>Counter: {counter}</h2>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <h2>{prueba}</h2>
+
     </div>
   );
 }
